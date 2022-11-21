@@ -1,0 +1,296 @@
+body{
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.galerija{
+    background-image: url(..//slike/pozadina.jpg);
+    background-size: cover;
+
+}
+
+
+#hedar{
+    background-color: #062038;
+    height: 100px;
+
+}
+nav{
+    height: 40px;
+    width: 1000px;
+    margin: 0 auto 40px ;
+    z-index: 99;
+    
+}
+
+
+
+
+
+nav>ul{
+    list-style-type: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+
+
+}
+
+nav>ul>li{
+    float: left;
+}
+nav>ul>li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: solid;
+    margin: 0 10px;
+    
+}
+
+main{
+    background: url(../slike/pozadina2.jpg) no-repeat top center;
+    background-size: cover;  
+    
+    color: white;
+    height: 600px;
+    font-weight: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+main h1{
+    position: relative;
+    font-size: 50px;
+    display: flex;
+    justify-content: center; 
+    height: min-content;
+    letter-spacing: 20px;
+}
+main p{  
+    font-size: 30px;
+    justify-content: center;
+}
+
+
+h4{
+    color: #000080;
+}
+
+nav>ul>li:hover{
+    background-color:rgba(252, 252, 252, 0.5);
+}
+
+
+.naslovGalerija2 {
+    color: rgb(218, 212, 212);
+    background-color: rgb(6, 1, 36);
+    font-size: 24px;
+    font-weight: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.galerijaSlika{
+    width: 80%;
+    margin: 80px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 30px;
+    
+}
+
+.galerijaSlika img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.galerijaSlika img:hover{
+    transform:scale(0.8) rotate(15deg);
+    border-radius: 10px;
+    box-shadow:#062038;
+}
+.fullSlika{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.restoranSlika{
+    width: 80%;
+    margin: 100px auto 50px;
+    /* 100px margina od vrha,auto se odnosi na marginu sa leve i desne i 50px od dna*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    /* Ovo svojstvo određuju broj kolona na koje će roditelj biti izdeljen 
+    pitaj da li ovo sme da se koristi */
+    grid-gap: 30px;
+    /* Grid-gap nam dozvoljava da napravimo razmak između svake ćelije grida */
+}
+
+.restoranSlika img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.restoranSlika img:hover{
+    transform:scale(0.8) rotate(15deg);
+    border-radius: 10px;
+    box-shadow:#062038;
+}
+ 
+
+
+
+ .paragraf1{
+    color:#062038 ;
+    font-size: 30px;
+    font-weight: 150px; 
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 0; 
+    background-image:url(../slike/mermer3.jpg);;
+}
+
+.paragraf2{
+    color:#062038 ;
+    font-size: 30px;
+    font-weight: 150px; 
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 0; 
+    background-image:url(../slike/mermer3.jpg);
+} 
+
+
+
+body{
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.klas1 {
+    margin: 20px;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 550px){
+   label{
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    float: left;
+    color: #ccc;
+   }
+
+   .naslovGalerija2{
+    background-image:url(../slike/mermer3.jpg);
+    color: #062038;
+    font-size: 20px;
+   }
+
+   .meni{ 
+    text-align: center;
+    width: 100%;
+    display: none;
+    clear: right;
+    
+   }
+   nav>ul{
+    display: block;
+    border-bottom: solid 1px white;
+    margin: 0;
+    color: white;
+    background-color: black;
+    opacity: 80%;
+   }
+  
+    #naslovGalerija{
+        text-align: center;
+        width: 70%;
+        display:inline;
+        font-size: 20px;
+    }
+    main p{
+        font-size: 20px;
+    }
+    main h1{
+        font-size: 30px;
+    }
+    main{
+        background-size: 800px 100%;
+        
+    }
+   
+
+   #toggle:checked+.meni{
+    display: block;
+   }
+
+   .paragraf1, .paragraf2{
+    font-size: 17px;
+   }
+   
+   .restoranSlika, .galerijaSlika{
+     margin: 100px 30px;
+     display: block;  
+   }
+   
+}
+
+@media (max-width:550px){
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+ 
+
+
+}
+
+footer{
+    padding: 1em;
+    background-color: #00264D;
+    font-family: 'Times New Roman', Times, serif;
+    color: #a38550;
+    
+}
+
+

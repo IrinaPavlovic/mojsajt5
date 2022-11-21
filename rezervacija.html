@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REZERVACIJA</title>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+</head>
+<body class="slika3" background="slike/slika1.jpg">
+    
+    <header id="hedar">
+        <nav>
+            <label id="burger" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+
+            <ul class="meni">
+                <!--Ovde spajas stranice-->
+                <li><a href="index.html">O NAMA</a></li>
+                <li><a href="rezervacija.html">REZERVACIJA</a></li>
+                <li><a href="meni.html">MENI</a></li>
+                <li><a href="galerija.html">GALERIJA</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+    
+    <div class="naslov">
+        <h1><b><i> REZERVACIJA</span> </i></b></h1>
+        <a href="#"><img class="logo" src="slike/logo.jpg"></a>
+    </div>
+    
+    <div class="roditelj">
+        <div class="dete dete1">
+            <h2 class="naslov2">Zašto baš mi?</h2>
+            <p id="paragraf">Naš bar nudi specijalne koktele i opsežnu vinsku kartu, a ako nemate vremena za veliku večeru, Taverna nudi ležerne obroke sa sjajnom picom, 
+            domaćom testeninom, pažljivo pripremljene specijalitete za ručak i lagane večere.Naša pažnja je posebno usmerena ka istraživanju 
+            kulinarstva kako bi udovoljili svim nepcima. Promene u kulturi ishrane dovele su do besprekornog, 
+            dubokog poznavanja sirovih sastojaka i sofisticirane tehnike pripreme.</p> 
+        </div>
+        <div class="dete dete2">
+            <h2 class="rezervacija">Rezervišite svoje mesto na vreme..</h2>
+              <form class="forma1">
+                <label for="imePrezime"> Ime i prezime: </label>
+                <input id="imePrezime" type="text" name="imePrezime" size="40" maxlength="35">
+                <h5 id="imePrezimecheck" style="color: red; display: none;">
+                    *Unesite ime i prezime u ispravnom formatu! *
+                </h5>
+                
+                <label for="brTel"> Broj telefona: </label>
+                <input id="brTel" type="text" name="brTel" size="40" maxlength="12"> 
+                <h5 id="brTelcheck" style="color: red; display: none">
+                    *Unesite broj telefona u ispravnom formatu! *
+                </h5>
+                <label for="email" > Email adresa: </label>
+                <input type="email" id="email" name="email" size="40" value="@gmail.com"> 
+                <h5 id="emailCheck" style="color: red; display: none">
+                    *Unesite email adresu u ispravnom formatu *
+                </h5>
+                <br>
+                Broj osoba:
+                <select name="brOsoba" id="brOsoba">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8+">8+</option>
+                </select>
+                <br>
+                Datum i Vreme: <input type="datetime-local" id="datumIvreme">
+                <br>
+                Želim potvrdu rezervacije putem: 
+                <select name="potvrda" id="potvrda">
+                    <option value="SMS">SMS</option>
+                    <option value="Poziv">Poziv</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Viber">Viber</option>
+                    <option value="Telegram">Telegram</option>
+                </select>
+                <br>
+                Napomena:
+                <textarea name="napomena" id="napomena" cols="60" rows="10"></textarea>
+
+                <div class="dugme">
+                  <button type="submit" id="dugme1" onclick="alertRezervisi()">Rezerviši</button>
+                  <button type="reset" id="dugme2" onclick="confirmPonisti()">Poništi</button>
+                </div>
+                
+              </form>
+        </div>
+        <div class="dete dete3">
+            <h3 class="naslov3">Priča Italije u Srcu Beograda </h3>
+            <p >Od toplog pozdrava do ekskluzivnog pogleda i pažljivo biranog dekora, do bogatih mirisa koji se šire iz kuhinje, Taverna je autentičan, italijanski stil.
+            Bilo da ste raspoloženi za uživanje u intimnoj večeri u elegantnom okruženju ili želite da impresionirate važne klijente tako što ćete ih odvesti na odličnu hranu sa uslugom svetske klase, dobrodošli ste da nas posetite… Mi smo tu za vas!
+            Bez obzira o kojoj prilici je reč, Taverna se zalaže da obraduje vas i vaše goste!</p>
+            
+        </div>
+        
+    </div>
+    <script src="script/jquery.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

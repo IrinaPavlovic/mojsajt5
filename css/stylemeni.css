@@ -1,0 +1,283 @@
+
+    body{
+        font-size: x-large;
+        margin-top: 0;
+        margin-left: 0;
+        background-image: url(../slike/pozadina.jpg) no-repeat top center;;
+        background-size: cover;
+    }
+    
+    
+    
+    #header{
+        background-color: #062038;
+        height: 70px;
+    }
+    
+    nav{
+        height: 40px;
+        width: 1000px;
+        margin: 0 auto 40px ;
+        z-index: 99;
+        
+    }
+        
+    nav>ul{
+        list-style-type: none;
+        margin: 0 30px 0 0;
+        padding: 0;
+    
+    
+    }
+    
+    nav>ul>li{
+        float: left;
+        font-size: 18px;
+    }
+    nav>ul>li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: solid;
+        margin: 0 10px;
+        
+    }
+    
+    nav>ul>li:hover{
+        background-color:rgba(252, 252, 252, 0.5) ;
+    }
+    h2{
+     color: rgb(22, 22, 94);
+     text-decoration: underline rgb(22, 22, 107);
+    }
+    
+    h5{
+        color: rgb(22, 22, 94);
+    }
+    
+    .ul{
+        color: rgb(118, 87, 46);
+    }
+    .roditelj{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr; 
+        grid-row-gap: 0.2rem;
+        grid-column-gap: 0.1rem; 
+        word-break: unset;
+        justify-content: space-around;
+        text-align: justify;
+    }
+    
+    .dete{
+        width: min-content;
+        white-space: nowrap;
+    }
+    
+    
+    .ul1{
+      text-align: right;
+     
+    }
+    
+    
+    
+    .ul2{
+        float: right; 
+        text-align: right;
+        align-self: center;
+    }
+    .ul3{
+        float: right;
+        text-align: right;
+        align-self: center;
+    }
+    
+    .dete4{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3; 
+    }
+    
+    
+    .kafel{
+        
+        font-size: large;
+        float: right;
+        text-align: right;
+        align-self: center;
+    }
+    
+    .kafed{
+         position: relative; 
+        
+        
+    } 
+    
+    .ulbp{
+        font-size: large;
+        float: right;
+        text-align: right;
+        align-self: center;
+    }
+    
+    .bpdiv{
+        position: absolute; 
+        margin-left: 300px;
+        margin-top: 100px;
+    } 
+    
+    .ulsok{
+        font-size: large;
+        float: right;
+        text-align: right;
+        align-self: center;
+       
+    }
+    
+    .sokdiv{
+       position: absolute;
+       margin-left: 650px;
+       margin-top: 100px;
+    } 
+    
+    .uld{
+        float: right;
+        text-align: right;
+        align-self: center;
+    }
+    
+    .roze:hover{
+        color: rgb(226, 43, 159);
+    }
+    
+    label{
+        margin: 0 40px 0 0;
+        font-size: 26px;
+        display: none;
+    }
+    
+    #toggle{
+        display: none;
+    }
+    
+    /* @media only screen and(max-width:550px){
+        .roditelj{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr ;
+            grid-template-areas: 
+              "dete1"
+              "dete2"
+              "dete3"
+              "dete4"
+              "dete5";
+        }
+    } */
+    
+    
+    @media(max-width:1024px){
+        .roditelj{
+           display: grid;
+           grid-template-columns: none;
+        }
+    }
+       @media(max-width:768px){
+       .roditelj{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           
+       }
+    }
+       
+       .sokdiv{
+           position: relative;
+           margin-top: 0px;
+           margin-left: 0px;
+       }
+       .bpdiv{
+           position: relative;
+           margin-left: 0px;
+           margin-top: 0px;
+       }
+       h5{
+        display: none;
+}
+
+
+
+@media(max-width:550px){
+    header{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .roditelj{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        
+    }
+
+    .roditelj{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr ;
+        grid-template-areas: 
+          "dete1"
+          "dete2"
+          "dete3"
+          "dete4"
+          "dete5";
+    }
+   
+    
+    .kafel{
+        font-size: 10px;
+    }
+    .ulbp{
+        font-size: 10px;
+    }
+    .ulsok{
+        font-size: 10px;
+    }
+    
+    h5{
+        display: none;
+    }
+    label{
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: left;
+        color: #ccc;
+       }
+       .meni{ 
+        text-align: center;
+        width: 100%;
+        display: none;
+        clear: right;
+        
+       }
+       nav>ul{
+        display: block;
+        border-bottom: solid 1px white;
+        margin: 0;
+        color: white;
+        background-color: black;
+        opacity: 80%;
+       }   
+    
+       #toggle:checked+.meni{
+        display: block;
+       }
+
+       nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    }

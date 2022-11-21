@@ -1,0 +1,344 @@
+body{
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.roditelj{
+    display: flex;
+    height: 670px;
+    column-gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
+    align-items: stretch;
+    align-content: space-between;
+    background-image: url(../slike/pozadina.jpg);
+    background-size: cover;
+    
+}
+
+.dete{
+    height: 300px;
+    width: 500px;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 20px;
+    color:rgb(82, 86, 90);
+    /* color: #FFD700; */
+    border: 5px rgb(246,234,190);
+    align-self: stretch;
+    justify-content: space-around;
+    justify-items:center;
+    align-items: center;
+    align-content: center;
+    line-height: 38px;
+    /* border-style: double; */
+
+}
+
+
+
+.naslov2{
+    font-size: 30px;
+    font-style: italic;
+    display: flex;
+    color:rgb(82, 86, 90);
+    font-weight: 20px;
+    background-color:rgb(246,234,190);
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center; 
+    height: min-content;
+}
+.logo{
+    width: 4%;
+    margin-left: 670px;
+    /* align-content: flex-end; */
+    position: absolute;
+    justify-content: right;
+    border-radius: 150px;
+
+}
+.slika3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../slike/slika1.jpg);
+    background-position: center;
+    /* padding-left: 10%;
+    padding-right: 10%;  */
+    box-sizing: border-box;
+
+}
+
+.naslov{
+    position: relative;
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    background-image: url(../slike/pozadina.jpg);
+    color:rgb(82, 86, 90);
+    justify-content: center; 
+    height: min-content;
+    letter-spacing: 5px;
+    
+}
+.naslov3{
+    font-size: 25px;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    background-color:rgb(246,234,190);
+    color:rgb(82, 86, 90);
+    justify-content: center; 
+    height: min-content;
+   
+}
+.rezervacija:hover{
+    color: rgb(246,234,190);
+    /* font-size: 20px; */
+}
+.rezervacija{
+    font-size: 20px;
+}
+
+.naslov2:hover{
+    color: beige;
+}
+.naslov3:hover{
+    color: beige;
+}
+
+
+
+.forma1{
+    padding: 3px 6px 3px 6px;
+    background-color: rgb(246,234,190);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#imePrezime{
+    width: 300px;
+    height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: initial;
+    font-weight: 200;
+}
+
+#brTel{
+    width: 300px;
+    height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: initial;
+    font-weight: 200;
+}
+#email{
+    width: 300px;
+    height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: initial;
+    font-weight: 200;
+}
+#brOsoba{
+    width: 300px;
+    height: 25px;
+}
+#datumIvreme{
+    width: 300px;
+    height: 20px;
+}
+#potvrda{
+    width: 170px;
+    height: 20px;
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: initial;
+    font-weight: 200;
+}
+
+#dugme1{
+  background-color:white;
+  border:double rgb(82, 86, 90);
+  font-size: 17px;
+  font-style: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color:rgb(82, 86, 90);
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#dugme2{
+    background-color:white;
+    border:double;
+    font-size: 17px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color:rgb(82, 86, 90);
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 220px;
+}
+
+
+
+#hedar{
+    background-color: #062038;
+    height: 100px;
+
+}
+nav{
+    height: 40px;
+    width: 1000px;
+    margin: 0 auto 40px ;
+    z-index: 99;
+    
+}
+
+
+
+
+
+nav>ul{
+    list-style-type: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+
+
+}
+
+nav>ul>li{
+    float: left;
+}
+nav>ul>li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: solid;
+    margin: 0 10px;
+    /* line-height: 70px; */
+   
+
+
+}
+
+
+
+nav>ul>li:hover{
+    background-color:rgba(252, 252, 252, 0.5);
+}
+
+
+
+
+body{
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.klas1 {
+    margin: 20px;
+}
+
+#burger{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 550px){
+    #burger{
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: left;
+        color: #ccc;
+    }
+   label{
+       display: block;
+        cursor: pointer;
+        /* width: 26px; */
+        float: left;
+        font-size: 20px;   
+   }
+
+
+   .forma1  input{
+     margin-right: 20px;
+     width:calc(100%/2-15px);
+   }
+
+   .meni{ 
+    text-align: center;
+    width: 100%;
+    display: none;
+    clear: right;
+    
+   }
+   nav{
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+}
+   nav>ul{
+    display: block;
+    border-bottom: solid 1px white;
+    margin: 0;
+    color: white;
+    background-color: black;
+    opacity: 80%;
+   }
+  
+    
+  
+   #toggle:checked+.meni{
+    display: block;
+   }
+   
+
+   .dete1{
+    display: none;
+   }
+   .dete3{
+    display: none;
+   }
+
+   /* nav{
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+} */
+}
+
+
+
+
